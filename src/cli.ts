@@ -4,7 +4,7 @@ import {translate} from './main';
 
 const program = new commander.Command();
 
-program.version('0.0.5')
+program.version('0.0.6')
 	.name('tt')
 	.usage('<english>')
 	.arguments('<english>')
