@@ -19,11 +19,9 @@ export const translate = (word: string) => {
 	let from, to;
 	
 	if (/[a-zA-Z]/.test(word[0])) {
-		// 英译中
 		from = 'en';
 		to = 'zh';
 	} else {
-		// 中译英
 		from = 'zh';
 		to = 'en';
 	}
