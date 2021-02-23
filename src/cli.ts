@@ -1,15 +1,16 @@
 #!/usr/bin/env node
-import * as commander from 'commander';
-import {translate} from './main';
+import * as commander from "commander";
+import { translate } from "./main";
 
 const program = new commander.Command();
 
-program.version('0.0.6')
-	.name('tt')
-	.usage('<english>')
-	.arguments('<english>')
+program
+	.version("0.0.6")
+	.name("tt")
+	.usage("<english>")
+	.arguments("<english>")
 	.action(function (english) {
-		translate(english)
+		translate(english);
 	});
 
 program.parse(process.argv);
